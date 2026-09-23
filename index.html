@@ -105,7 +105,7 @@
       const loadingDiv = addMessage('智能体', '思考中...');
 
       try {
-        const res = await fetch('/api/chat', {
+        const res = await fetch('/functions/chat', {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify({
